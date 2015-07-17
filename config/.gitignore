@@ -1,0 +1,4 @@
+# List your config files here, but
+# leave out the corresponding
+# `*.example` files
+database.js

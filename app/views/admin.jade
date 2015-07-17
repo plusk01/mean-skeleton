@@ -1,0 +1,38 @@
+extends layout
+
+block body
+  div.container-fluid
+    form(id='uploadForm',enctype='multipart/form-data',action='/api/days',method='post')
+      div.form-group
+        label(for='title') Day Title
+        input.form-control(type='text',id='title',name='title')
+
+      div.form-group
+        label(for='description') Day Description
+        input.form-control(type='text',id='description',name='description')
+
+      div.form-group
+        label(for='city') City
+        input.form-control(type='text',id='city',name='location_city')
+
+      div.form-group
+        label(for='country') Country
+        input.form-control(type='text',id='country',name='location_country')
+
+      div.form-group
+        label(for='temperature') Temperature
+        input.form-control(type='text',id='temperature',name='location_temperature')
+
+      div.form-group
+        label(for='weather-description') Description
+        input.form-control(type='text',id='weather-description',name='weather_description')
+
+      div.form-group
+        label(for='header-img') Header Picture
+        input(type='file',id='header-img',name='headerImgPath')
+
+      div.form-group
+        label(for='images-img') Images
+        input(type='file',id='images-img',name='imagesPath',multiple)
+
+      input.btn.btn-default(type='submit',value='Create Day',name='submit')
