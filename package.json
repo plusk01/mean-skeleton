@@ -1,0 +1,24 @@
+{
+  "name": "mean-skeleton",
+  "version": "1.0.0",
+  "description": "A MEAN skeletal structure that makes a lot of sense to me",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://plusk01@github.com/plusk01/mean-skeleton.git"
+  },
+  "keywords": [
+    "mean",
+    "structure",
+    "example"
+  ],
+  "author": "Parker Lusk",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/plusk01/mean-skeleton/issues"
+  },
+  "homepage": "https://github.com/plusk01/mean-skeleton"
+}

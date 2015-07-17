@@ -1,0 +1,26 @@
+{
+  "name": "mean-skeleton",
+  "version": "1.0.0",
+  "homepage": "https://github.com/plusk01/mean-skeleton",
+  "authors": [
+    "Parker Lusk <parkerclusk@gmail.com>"
+  ],
+  "description": "A MEAN skeletal structure that makes a lot of sense to me",
+  "main": "app.js",
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "mean",
+    "structure",
+    "example"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
