@@ -5,7 +5,7 @@ This directory serves to hold/organize any custom middleware that your app uses.
 
 The middleware pattern can be understood within context of the request/response pattern:
 
-[!Middleware Pattern](middleware-pattern.png)
+![Middleware Pattern](middleware-pattern.png)
 
 The purpose of middleware is to do some processing to the incoming request. In the above example, the middleware did some checks to make sure that the user that generated the request was authorized to be there. This can be seen by the `{auth: true}` property that was added to the request. Now, the rest of the app can expect a property to exist on the `req` variable called `req.auth` and can use that Boolean to easily check if the request is authenticated. This follows the principle of each 'function doing one thing and doing it well' as well as modularity.
 
