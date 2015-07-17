@@ -21,6 +21,43 @@ Click on links for more information about that part of the structure.
 + **[public](public)**
     + css - All of your frontend css files
     + js - All of your frontend js files
++ *.bowerrc* - This is where you tell `bower` to install dependencies in a specific place (`public/lib`)
++ *.gitignore* - Make sure that you have all packages handled by `npm` and `bower` included in here so you don't source control them. View this file as an example.
++ *bower.json* - Used to keep track of which dependencies you've installed. This allows you to share this project with someone else so they can just clone and type `bower install` and the project will be setup like yours.
++ *package.json* - Similar to `bower.json`, except backend node modules are kept track here.
+
+## A Note on Package Managers ##
+
+Package Managers are an important part of web development. The following gives a brief explanation of `bower` and `npm`.
+
+#### Bower ####
+
+`bower` is used to install frontend dependencies. Always use the `--save` option so that the dependency is saved in `bower.json` for others to see.
+
+Never source control the packages installed by `bower`, instead, source control the `bower.json` which holds all the installs. These dependencies can automagically be installed by running `bower install` in the same directory as the `bower.json`
+
+Some common frontend packages:
+
+```bash
+bower install angular --save
+bower install bootstrap --save
+bower install jquery --save
+bower install sweetalert --save
+```
+
+#### npm ####
+
+`npm` is used to install backend, node dependencies. Always use the `--save` option so that the dependency is saved in `package.json` for others to see.
+
+Never source control the packages installed by `npm`, instead, source control the `package.json` which holds all the installs. These dependencies can automagically be installed by running `npm install` in the same directory as the `package.json`
+
+Some common node modules:
+
+```bash
+npm install express --save
+npm install mongoose --save
+npm install mongoose --save
+```
 
 ## Steps to Setup a MEAN Project ##
 
