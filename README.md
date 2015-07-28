@@ -107,3 +107,9 @@ These steps assume some familiarity with the terminal and that you have `npm` an
     *If you don't have `nodemon`, you can use `node app.js` but you will have to restart the server manually everytime you make a backend JavaScript change. Instead, install `nodemon` with `npm install nodemon --global`*
 
 10. Visit the url:port listed in your browser!
+
+------------------------
+
+## Node Environment Setup ##
+
+See [this](npm-setup.md) explanation.
