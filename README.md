@@ -93,7 +93,7 @@ These steps assume some familiarity with the terminal and that you have `npm` an
 5. Create the directory structure of this repo:
 
     ```bash
-    mkdir -p app/{api,middleware,models,routes,views} config public/{css,js}
+    mkdir -p app/{api,middleware,models,routes,socket,views} config public/{css,js}
     ```
 
 6. Create or copy your `app.js`

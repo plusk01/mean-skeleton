@@ -13,12 +13,14 @@
 var express     = require('express');               // Easy API routing
 var app         = express();                        // Create the app
 var mongoose    = require('mongoose');              // DB Engine for Mongo
+var socketio    = require('socket.io');             // socketio for real time communication
 var bodyParser  = require('body-parser');           // Parses POST JSON automagically
 var morgan      = require('morgan');                // Logging for dev
 var path        = require('path');                  // filesystem goodies
 
 var api         = require('./app/api');             // API routes
 var routes      = require('./app/routes')           // HTML public routes
+var socket      = require('./app/socket');          // socket handler
 var database    = require('./config/database');     // database configs
 
 var port        = process.env.PORT || 8080;         // If no env var set, DEV mode
@@ -65,3 +67,9 @@ app.get('/day/:day', routes.dayAlbum)
 
 app.listen(port);
 console.log('Server started on port ' + port);
+
+// ----------------------------------------------------------------------------
+// Socket.io Event Handler
+// ----------------------------------------------------------------------------
+
+socket.handle(io);
