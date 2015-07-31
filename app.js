@@ -65,7 +65,7 @@ app.get('/day/:day', routes.dayAlbum)
 // Listen (start app: `node app.js`)
 // ----------------------------------------------------------------------------
 
-app.listen(port);
+var io = socketio.listen(app.listen(port));
 console.log('Server started on port ' + port);
 
 // ----------------------------------------------------------------------------
