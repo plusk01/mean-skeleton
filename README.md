@@ -110,6 +110,14 @@ These steps assume some familiarity with the terminal and that you have `npm` an
 
 ------------------------
 
+## API/User Authentication ##
+
+[here](https://scotch.io/tutorials/authenticate-a-node-js-api-with-json-web-tokens)
+[bcrypt](http://codahale.com/how-to-safely-store-a-password/)
+
+
+------------------------
+
 ## Node Environment Setup ##
 
 See [this](npm-setup.md) explanation.
