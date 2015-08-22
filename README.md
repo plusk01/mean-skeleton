@@ -114,6 +114,7 @@ These steps assume some familiarity with the terminal and that you have `npm` an
 
 [here](https://scotch.io/tutorials/authenticate-a-node-js-api-with-json-web-tokens)
 [bcrypt](http://codahale.com/how-to-safely-store-a-password/)
+[password hashing](http://devsmash.com/blog/password-authentication-with-mongoose-and-bcrypt)
 
 
 ------------------------
