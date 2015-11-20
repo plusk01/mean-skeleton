@@ -20,3 +20,9 @@ Also, notice that because the file is called `index.js` and is inside its own di
 ```javascript
 var api = require('api');
 ```
+
+----------------------
+
+## Public vs Private API ##
+
+The routes that live in the `index.js` file are private and protected by authentication. The routes that live in the `public.js` file are able to be accessed by any anonymous or authenticated user. These routes are how users can get there JWT to become authenticated.

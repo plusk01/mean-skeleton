@@ -2,3 +2,4 @@
 # leave out the corresponding
 # `*.example` files
 database.js
+jwt.js

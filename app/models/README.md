@@ -30,6 +30,12 @@ var Picture = require('models/Picture');
 
 ------------------------
 
+## Using bcrypt to Hash User Passwords ##
+
+See API/User Authentication in the main README.
+
+------------------------
+
 ### See Also ###
 
 + [Example NodeJS / Mongoose / Express app](https://gist.github.com/fwielstra/1025038#file-post-js)

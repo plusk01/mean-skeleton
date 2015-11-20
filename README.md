@@ -112,9 +112,9 @@ These steps assume some familiarity with the terminal and that you have `npm` an
 
 ## API/User Authentication ##
 
-[here](https://scotch.io/tutorials/authenticate-a-node-js-api-with-json-web-tokens)
-[bcrypt](http://codahale.com/how-to-safely-store-a-password/)
-[password hashing](http://devsmash.com/blog/password-authentication-with-mongoose-and-bcrypt)
+ - [NodeJS and JWT](https://scotch.io/tutorials/authenticate-a-node-js-api-with-json-web-tokens)
+ - [Use bcrypt for Storing Passwords!](http://codahale.com/how-to-safely-store-a-password/)
+ - [Password Hashing Using bcrypt](http://devsmash.com/blog/password-authentication-with-mongoose-and-bcrypt)
 
 
 ------------------------

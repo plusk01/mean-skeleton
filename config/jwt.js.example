@@ -1,0 +1,4 @@
+module.exports = {
+    // used to create and verify JSON Web Tokens
+    secret : 'thisismysecret'
+}

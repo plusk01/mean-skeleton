@@ -1,0 +1,5 @@
+module.exports = {
+
+    // The database URL to connect to
+    url : 'mongodb://localhost/mean-skeleton',
+}

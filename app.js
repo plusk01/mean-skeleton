@@ -19,7 +19,8 @@ var morgan      = require('morgan');                // Logging for dev
 var path        = require('path');                  // filesystem goodies
 
 var api         = require('./app/api');             // API routes
-var routes      = require('./app/routes')           // HTML public routes
+var publicAPI   = require('./app/api/public');      // Public API routes
+var routes      = require('./app/routes')           // HTML public routes (views)
 var socket      = require('./app/socket');          // socket handler
 var database    = require('./config/database');     // database configs
 
@@ -45,21 +46,34 @@ app.use(morgan('dev'));                             // For request logging
 // Custom Middleware
 // ----------------------------------------------------------------------------
 
-app.use(require('./app/middleware/basic-auth')());  // Basic auth
+// Basic Auth: This is an example of the basic-auth npm package.
+// app.use(require('./app/middleware/basic-auth')());           // Basic auth
 
 // ----------------------------------------------------------------------------
-// Routes
+// Public Routes
 // ----------------------------------------------------------------------------
 
 app.use(express.static(path.join(__dirname, 'public')));        // for the HTML5/JS app
 app.use('/uploads', express.static(__dirname + '/uploads'));    // for files/images
 
-app.use('/api', api);                                           // all API requests will be http://host.com/api/...
+app.use('/api', publicAPI);                                     // public API for authentication
 
-/* Routes */
+/* Routes (views) */
 app.get('/', routes.index);
 app.get('/admin', routes.admin)                                 // An admin page that you want to protect
 app.get('/day/:day', routes.dayAlbum)
+
+// ----------------------------------------------------------------------------
+// Authentication Middleware
+// ----------------------------------------------------------------------------
+
+app.use(require('./app/middleware/jwt-auth')());                // JWT auth
+
+// ----------------------------------------------------------------------------
+// Private Routes
+// ----------------------------------------------------------------------------
+
+app.use('/api', api);                                           // all secure API requests will be http://host.com/api/...
 
 // ----------------------------------------------------------------------------
 // Listen (start app: `node app.js`)
