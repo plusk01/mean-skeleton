@@ -2,8 +2,8 @@ var express     = require('express');
 var router      = express.Router();             
 
 // Model imports
-var Picture     = require('./models/Picture');
-var Day         = require('./models/Day');
+var Picture     = require('../models/Picture');
+var Day         = require('../models/Day');
 
 // read
 router.get('/days', function (req, res) {
